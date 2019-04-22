@@ -1,11 +1,11 @@
-.navbar {
+#navbar {
 	font-size: 20px;
 	margin: 0 auto;
 	padding: 20px 20px 20px 0px;
 }
 
-.website-link {
-	font-size: 80px;
+#website-link {
+	font-size: 60px;
 }
 
 html {
