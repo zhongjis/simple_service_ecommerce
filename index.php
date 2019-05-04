@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+require_once "header.php";
+?>
 <html>
 	<head>
 		<title>About Us</title>
@@ -6,13 +8,6 @@
 		<link rel="stylesheet" href="styles/index.css" type="text/css">
 		<link rel="stylesheet" href="styles/general.css">
 	</head>
-	<body>
-		<a id="website-link" href="index.php">wedoeverythingforyou.com</a>
-		<div id="navbar">
-			<a href="index.php">About Us</a>
-			<a href="product.php">Products</a>
-		</div>
-	</body>
 	<body>
 		<h2>What Are We Selling?</h2>
 		<p>We are offering the service for people who like traveling but do not have time to. As you can see, on our product page, we offer various kinds of crazy services. For example, like Pandas? We can deliver one to your house and taken care of it for your! We will handle all the paper work and so on and the only thing that you need to do is telling us what to do!</p>
