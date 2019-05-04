@@ -1,6 +1,4 @@
-<?php
-require_once "header.php";
-?>
+<?php require_once "header.php"; ?>
 <html>
 	<head>
 		<title>About Us</title>
