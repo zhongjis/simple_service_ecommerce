@@ -1,5 +1,5 @@
 function getMoreDetail(obj) {
-	window.location.href = obj+'.html';
+	window.location.href = obj+'.php';
 }
 
 function findOutMore(obj) {
