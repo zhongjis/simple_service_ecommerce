@@ -1,7 +1,7 @@
 <?php
 
 function connect(){
-        require $_SERVER['DOCUMENT_ROOT'].'/../dbconfig.php';
+        require $_SERVER['DOCUMENT_ROOT'].'/dbconfig.php';
         $hostname = DB_HOST;
         $username = DB_USER;
         $password = DB_PASSWORD;
