@@ -13,7 +13,7 @@
 	<body>
 		<h2>Project Group</h2>
 		<img src="images/hipanda.jpg" alt="Panda Hi">
-		<p>Hi, my name is Shen. I am the only team member in this project group</p>
+		<p>Hi, we are team ForgotPasswords. We have two members who are Zhongjie Shen and Christopher Zhao</p>
 	</body>
 	<body>
 		<h2>What Else Should You Know About Us?</h2>
