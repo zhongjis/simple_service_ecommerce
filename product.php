@@ -1,4 +1,26 @@
+<?php
+	// this php block is for db connection and data retrival 
+	include_once('dbconnect.php');
+	$conn = connect(); 
+	$query = "SELECT * FROM products";
+	$result = $pdo->query($query);
+?>
+
+<?php
+	while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+?>
+		<div class="product">
+				<img onclick="getMoreDetail('babylion')" src="images/babylion.jpg" alt="Baby Lion">
+				<h3 class="product-title"> <php? echo $rows['name']; ?> </h3>
+				<p class="product-description"> <php? echo $rows['description']; ?> </p>
+				<a href="index.php">Contact Us</a>
+		</div>
+<?php
+	}
+?>
+
 <!DOCTYPE html>
+<?php require_once "header.php"; ?>
 <html>
 	<title>Product</title>
 	<head>
@@ -8,11 +30,6 @@
 		<link rel="stylesheet" href="styles/general.css">
 	</head>
 	<body>
-		<a id="website-link" href="index.php">wedoeverythingforyou.com</a>
-		<div id="navbar">
-			<a href="index.php">About Us</a>
-			<a href="product.php">Products</a>
-		</div>
 		<div id="products">
 			<h1>Our Products</h1>
 			<div class="product">
