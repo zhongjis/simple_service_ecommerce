@@ -75,7 +75,7 @@
 				<input type="text" name="cardHolderField" id="creditHolder"><br>
 			</div> <br>
 			<input type="reset" value="Reset">
-			<input type="submit" value="Submit">
+			<input type="submit" value="submit">
 		</form>
 	</body>
 </html>
