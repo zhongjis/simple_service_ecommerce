@@ -7,6 +7,7 @@ function getPlace(zipcode)
         {
             var result = xhr.responseText;
             var place = result.split (', ');
+            console.log(place[0], place[1]);
             if (document.getElementById ("city").value == "")
                 document.getElementById ("city").value = place[0];
             if (document.getElementById ("state").value == "")
