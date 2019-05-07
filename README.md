@@ -22,14 +22,14 @@ Requirements:
 
     2.  When the user submits a form to order a product, instead of sending an email from the client-side, as you did in first assignment, the request should be sent to a server-side PHP script that stores that information in a database table. The form should be validated to prevent insertion of bad data in your database. 
 
-    (under products in http://centaurus-1.ics.uci.edu:1077/product.html)
+    (under products in http://centaurus-1.ics.uci.edu:1077/product.html, it will be redirect to confirmation.php after order submission, validation is achieved with product.js)
 
 
 
 
     3.  After successfully storing the order information in a database table, a dynamically generated confirmation page should to be displayed to the user with the details of the order. 
 
-    (after submitting the form in a product under http://centaurus-1.ics.uci.edu:1077/product.html)
+    (after submitting the form in one of the products under http://centaurus-1.ics.uci.edu:1077/product.html)
 
 
 
