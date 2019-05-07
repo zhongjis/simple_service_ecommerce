@@ -4,6 +4,7 @@
 		<title>Product Info</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles/general.css" type="text/css">
+		<script type = "text/JavaScript" src ="ajax.js"> </script>
 	</head>
 	<body>
 		<a id="website-link" href="index.php">wedoeverythingforyou.com</a>
@@ -11,9 +12,16 @@
 			<a href="index.php">About Us</a>
 			<a href="product.php">Products</a>
 		</div>
-		<h1>Product Name</h1>
-		<h2>Product image</h2>
-		<p>Product Description</p>
+		<?php
+			$id = $_GET["id"];
+			$query = "SELECT * FROM products WHERE id = ".$id;
+			$result = $conn->query($query);
+			while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+				echo('<h1 class="product-title">'.$row['name'].'</h1>');
+				echo("<img src='".$row['img_dir']."' alt='".$row['img_dir']."'>");
+				echo('<p class="product-description">'.$row['detail_description'].'</p>');
+			}
+		?>
 		<form>
 			<h3>Get a Quote</h3>
 			Product Identifier:<br>
