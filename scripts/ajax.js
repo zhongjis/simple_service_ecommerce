@@ -17,9 +17,10 @@ function getPlace(zip)
     xhr.send();
 }
 
-function getPrice()
+function getTax()
 {
     var zip = document.getElementById("zipCode").value;
+    alert(zip);
     if (window.XMLHttpRequest) {
 		var xhr = new XMLHttpRequest();
     } else {

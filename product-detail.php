@@ -55,7 +55,7 @@
 				Shipping Address: <br>
 				<input type="text" name="shippingAddressField" id="shippingAddress"> <br>
 				Zip Code: <br>
-				 <input type="text" name="zipcodeField" id="zipCode" onblur="getPlace(this.value); getPrice();"> <br>
+				 <input type="text" name="zipcodeField" id="zipCode" onblur="getPlace(this.value); getTax();"> <br>
 				City: <br>
 				<input type="text" name="cityField" id="city"> <br>
 				State: <br>
