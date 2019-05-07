@@ -54,6 +54,12 @@
 				<input type="text" name="phoneNumberField" id="phoneNumber"> <br>
 				Shipping Address: <br>
 				<input type="text" name="shippingAddressField" id="shippingAddress"> <br>
+				Zip Code: <br>
+				<input type="" name="Zip Code" id="zipcode"> <br>
+				City: <br>
+				<input type="" name="City" id="city"> <br>
+				State: <br>
+				<input type="" name="State" id="state"> <br>
 				Shipping Method: <br>
 				<select name="shippingMethod">
 					<option value="overnight">Overnight</option>
