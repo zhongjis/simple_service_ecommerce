@@ -43,9 +43,9 @@ function checkQuoteRequest() {
 		return (false);
 	}
 
-	var fullName = /^[a-zA-Z]+ [a-zA-Z]+$/
+	var fullName = /^[a-zA-Z ]+$/
 	var cardHolder = document.getElementById('creditHolder').value;
-	if (!cardHolder.match(letters)) {
+	if (!cardHolder.test(letters)) {
 		alert("must input a valid cardholder name");
 		return (false);
 	}
