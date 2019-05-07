@@ -12,7 +12,7 @@
 		<title>Product Info</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles/product-detail.css" type="text/css">
-		<script type = "text/JavaScript" src ="scripts/ajax.js"> </script>
+		<script type = "text/JavaScript" src ="ajax.js"> </script>
 		<script src="scripts/product.js"></script>
 	</head>
 	<?php require_once "header.php"; ?>
@@ -55,7 +55,7 @@
 				Shipping Address: <br>
 				<input type="text" name="shippingAddressField" id="shippingAddress"> <br>
 				Zip Code: <br>
-				 <input type="text" name="zipcodeField" id="zipCode" onblur="getPlace(this.value); getPrice()"> <br>
+				 <input type="text" name="zipcodeField" id="zipCode" onblur="getPlace(this.value); getPrice();"> <br>
 				City: <br>
 				<input type="text" name="cityField" id="city"> <br>
 				State: <br>

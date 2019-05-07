@@ -20,15 +20,20 @@ function getPlace(zip)
 function getPrice()
 {
     var zip = document.getElementById("zipCode").value;
-    var xhr = new XMLHttpRequest(); 
+    if (window.XMLHttpRequest) {
+		var xhr = new XMLHttpRequest();
+    } else {
+		var xhr = new ActiveXObject ("Microsoft.XMLHTTP");
+    }
     xhr.onreadystatechange = function ()
     {
-        if (xhr.readyState == 4 && xhr.status == 200) 
-        {
+        
             var result = xhr.responseText;
-            document.getElementById ("taxrate").value = result; 
-        }
+            var rate = result;
+            document.getElementById ("taxrate").value = rate; 
+        
     }
-    xhr.open("GET", "getCityState.php?zip=" + zip, true);
+
+    xhr.open("GET", "getTaxRate.php?zip=" + zip, true);
     xhr.send();
 }
