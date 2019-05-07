@@ -27,12 +27,12 @@
 				echo('<p class="product-description">'.$row['detail_description'].'</p>');
 			}
 		?>
-		<form action="" name="QuoteForm" method="GET" enctype="text/plain" onSubmit="return (checkQuoteRequest())"> <br>
+		<form action="get-method.php" name="QuoteForm" method="GET" enctype="text/plain" onSubmit="return (checkQuoteRequest())"> <br>
 			<h3>Get a Quote</h3>
 			<div id="basicInfo">
 				<h4>Basic Information</h4>
 				Product Identifier: <br>
-				<select name="Product Identifier" id="productidentifier">
+				<select name="productIdentifierField" id="productidentifier">
 					<option value="Baby Lion Service">Baby Lion Service</option>
 					<option value="Camel Service">Camel Service</option>
 					<option value="Cancun Settlement Service">Cancun Settlement Service</option>
@@ -55,13 +55,13 @@
 				Shipping Address: <br>
 				<input type="text" name="shippingAddressField" id="shippingAddress"> <br>
 				Zip Code: <br>
-				 <input type="number" name="Zip Code" id="zipCode" onblur="getPlace(this.value);"> <br>
+				 <input type="number" name="zipcodeField" id="zipCode" onblur="getPlace(this.value);"> <br>
 				City: <br>
-				<input type="" name="City" id="city"> <br>
+				<input type="" name="cityField" id="city"> <br>
 				State: <br>
-				<input type="" name="State" id="state"> <br>
+				<input type="" name="stateField" id="state"> <br>
 				Shipping Method: <br>
-				<select name="shippingMethod" id="shippingMethod">
+				<select name="shippingMethodField" id="shippingMethod">
 					<option value="overnight">Overnight</option>
 					<option value="2-day">2-day</option>
 					<option value="6-day">6-day</option>
@@ -75,7 +75,7 @@
 				<input type="text" name="cardHolderField" id="creditHolder"><br>
 			</div> <br>
 			<input type="reset" value="Reset">
-			<input type="submit" value="Send">
+			<input type="submit" value="Submit">
 		</form>
 	</body>
 </html>

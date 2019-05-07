@@ -3,18 +3,18 @@
 
 	if ( isset( $_GET['submit'] ) ) { 
 		// retrieve the form data by using the element's name attributes value as key 
-		$product_identifier = $_GET['productidentifier'];
-		$quantity = $_GET['quantity'];
-		$firstname = $_GET['firstname']; 
-		$lastname = $_GET['lastname'];
-		$phoneNumber = $_GET['phoneNumber']; 
-		$shippingAddress = $_GET['shippingAddress'];
-		$zipCode = $_GET['zipCode'];
-		$city = $_GET['city'];
-		$state = $_GET['state'];
-		$shippingMethod = $_GET['shippingMethod'];
-		$creditNo = $_GET['creditNo'];
-		$creditHolder = $_GET['creditHolder'];
+		$product_identifier = $_GET['productIdentifierField'];
+		$quantity = $_GET['quantityField'];
+		$firstname = $_GET['firstNameField']; 
+		$lastname = $_GET['lastNameField'];
+		$phoneNumber = $_GET['phoneNumberField']; 
+		$shippingAddress = $_GET['shippingAddressField'];
+		$zipCode = $_GET['zipcodeField'];
+		$city = $_GET['cityField'];
+		$state = $_GET['stateField'];
+		$shippingMethod = $_GET['shippingMethodField'];
+		$creditNo = $_GET['creditNoField'];
+		$creditHolder = $_GET['cardHolderField'];
 
 		// display the results 
 		echo '<h3>Form GET Method</h3>'; 
