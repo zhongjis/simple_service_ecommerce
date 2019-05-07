@@ -39,36 +39,6 @@
 		$creditNo."', '".
 		$creditHolder."')";
 
-		// display the results 
-		echo('<h2>Your Order</h2>');
-		
-		$stmt = $conn->prepare('SELECT * FROM orderinfo WHERE id = :id');
-
-		function getRows() {
-			global $conn, $order_id, $stmt;
-			$stmt->bindParam(':id', $order_id);
-			$stmt->execute();
-		}
-
-		function showConfirmation(){
-			global $stmt;
-			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-				echo('<p>Your order No.: '.$row['id'].'</p>');
-				echo('<p>Your product: '.$row['product'].'</p>');
-				echo('<p>Quantity: '.$row['quantity'].'</p>');
-				echo('<p>Your first name: '.$row['firstname'].'</p>');
-				echo('<p>Your last name: '.$row['lastname'].'</p>');
-				echo('<p>Your contact phone number: '.$row['phonenumber'].'</p>');
-				echo('<p>Your address: '.$row['address'].'</p>');
-				echo('<p>Your zip code: '.$row['zipcode'].'</p>');
-				echo('<p>Your city: '.$row['city'].'</p>');
-				echo('<p>Your state: '.$row['state'].'</p>');
-				echo('<p>Your shipping method: '.$row['shippingmethod'].'</p>');
-				echo('<p>Your credit card No.: '.$row['creditcardnumber'].'</p>');
-				echo('<p>Your card holder name: '.$row['nameofthecard'].'</p>');
-			}		
-		}
-
 		function showSubmission() {
 			global $conn, $query;
 			echo('<h3>Form Submission status</h3>'); 
@@ -79,12 +49,10 @@
 			}
 		}
 
-		getRows();
-		showConfirmation();
 		showSubmission();
 
 		header("confirmation.php?id=".$order_id);
-
+		echo('<a href="confirmation.php?id='.$order_id.'">'.'Click Here to see your order confirmation</a>');
 		exit;
 	// }
 ?>
