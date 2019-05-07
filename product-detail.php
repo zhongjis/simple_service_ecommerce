@@ -55,17 +55,20 @@
 				Shipping Address: <br>
 				<input type="text" name="shippingAddressField" id="shippingAddress"> <br>
 				Zip Code: <br>
-				 <input type="number" name="zipcodeField" id="zipCode" onblur="getPlace(this.value);"> <br>
+				 <input type="text" name="zipcodeField" id="zipCode" onblur="getPlace(this.value); getPrice()"> <br>
 				City: <br>
-				<input type="" name="cityField" id="city"> <br>
+				<input type="text" name="cityField" id="city"> <br>
 				State: <br>
-				<input type="" name="stateField" id="state"> <br>
+				<input type="text" name="stateField" id="state"> <br>
 				Shipping Method: <br>
 				<select name="shippingMethodField" id="shippingMethod">
 					<option value="overnight">Overnight</option>
 					<option value="2-day">2-day</option>
 					<option value="6-day">6-day</option>
-				</select> <br> <br>
+				</select> <br>
+				Tax Rate: <br>
+				<input type="text" name="taxrate" id="taxrate"> <br>
+				<br> <br>
 			</div>
 			<div id="paymentInfo">
 				<h4>Deposit Payment Method</h4>
