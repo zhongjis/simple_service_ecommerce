@@ -12,7 +12,7 @@
 		<title>Product Info</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles/product-detail.css" type="text/css">
-		<script type = "text/JavaScript" src ="ajax.js"> </script>
+		<script type = "text/JavaScript" src ="scripts/ajax.js"> </script>
 		<script src="scripts/product.js"></script>
 	</head>
 	<?php require_once "header.php"; ?>
