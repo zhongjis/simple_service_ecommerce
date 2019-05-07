@@ -20,7 +20,6 @@ function getPlace(zip)
 function getTax()
 {
     var zip = document.getElementById("zipCode").value;
-    alert(zip);
     if (window.XMLHttpRequest) {
 		var xhr = new XMLHttpRequest();
     } else {
@@ -28,8 +27,7 @@ function getTax()
     }
     xhr.onreadystatechange = function ()
     {
-        
-            var result = xhr.responseText;
+            var result = parseFloat(xhr.responseText);
             var rate = result;
             document.getElementById ("taxrate").value = rate; 
         
