@@ -22,9 +22,7 @@
 			<?php
 				while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 					echo('<div class="product">');
-					echo('<a href="/product.php?id=');
-					echo($row['id']);
-					echo('">');
+					echo('<a href="/product-detail.php?id='.$row['id'].'">');
 					echo("<img src='".$row['img_dir']."' alt='".$row['img_dir']."'>");
 					echo('</a>');
 					echo('<h3 class="product-title">'.$row['name'].'</h3>');
