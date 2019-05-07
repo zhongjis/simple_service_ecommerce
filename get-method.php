@@ -52,8 +52,7 @@
 
 		showSubmission();
 
-		header("confirmation.php?id=".$order_id);
-		echo('<a href="confirmation.php?id='.$order_id.'">'.'Click Here to see your order confirmation</a>');
+		header("Location: /confirmation.php?id=".$order_id);
 		exit;
 	// }
 ?>
