@@ -61,7 +61,7 @@
 				State: <br>
 				<input type="" name="State" id="state"> <br>
 				Shipping Method: <br>
-				<select name="shippingMethod">
+				<select name="shippingMethod" id="shippingMethod">
 					<option value="overnight">Overnight</option>
 					<option value="2-day">2-day</option>
 					<option value="6-day">6-day</option>
