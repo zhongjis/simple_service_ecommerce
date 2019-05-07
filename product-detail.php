@@ -27,22 +27,22 @@
 				echo('<p class="product-description">'.$row['detail_description'].'</p>');
 			}
 		?>
-		<form action="mailto:zhongjis@uci.edu" name="QuoteForm" method="post" enctype="text/plain" onSubmit="return (checkQuoteRequest())"> <br>
+		<form action="" name="QuoteForm" method="GET" enctype="text/plain" onSubmit="return (checkQuoteRequest())"> <br>
 			<h3>Get a Quote</h3>
 			<div id="basicInfo">
 				<h4>Basic Information</h4>
 				Product Identifier: <br>
-				<select name="How long you want this done" id="shippingMethod">
-					<option value="lion">Baby Lion Service</option>
-					<option value="camel">Camel Service</option>
-					<option value="cancun">Cancun Settlement Service</option>
-					<option value="chongqing">Chongqing, China Settlement Service</option>
-					<option value="effelTower">Effel Tower Settlement Service</option>
-					<option value="hollywood">Hollywood Settlement Service</option>
-					<option value="lion">Moscow Settlement Service</option>
-					<option value="camel">Baby Panda Service</option>
-					<option value="cancun">Valley Settlement Service</option>
-					<option value="chongqing">Budda at Home Service</option>
+				<select name="Product Identifier" id="productidentifier">
+					<option value="Baby Lion Service">Baby Lion Service</option>
+					<option value="Camel Service">Camel Service</option>
+					<option value="Cancun Settlement Service">Cancun Settlement Service</option>
+					<option value="Chongqing, China Settlement Service">Chongqing, China Settlement Service</option>
+					<option value="Effel Tower Settlement Service">Effel Tower Settlement Service</option>
+					<option value="Hollywood Settlement Service">Hollywood Settlement Service</option>
+					<option value="Moscow Settlement Service">Moscow Settlement Service</option>
+					<option value="Baby Panda Service">Baby Panda Service</option>
+					<option value="Valley Settlement Service">Valley Settlement Service</option>
+					<option value="Budda at Home Service">Budda at Home Service</option>
 				</select> <br>
 				Quantity: <br> 
 				<input type="text" name="quantityField" id="quantity"> <br>
@@ -55,7 +55,7 @@
 				Shipping Address: <br>
 				<input type="text" name="shippingAddressField" id="shippingAddress"> <br>
 				Zip Code: <br>
-				<input type="" name="Zip Code" id="zipcode"> <br>
+				 <input type="number" name="Zip Code" id="zipCode" onblur="getPlace(this.value);"> <br>
 				City: <br>
 				<input type="" name="City" id="city"> <br>
 				State: <br>
