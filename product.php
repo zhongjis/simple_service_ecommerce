@@ -1,6 +1,6 @@
 <?php
 	// this php block is for db connection and data retrival 
-	include_once('dbconnect.php');
+	require_once('dbconnect.php');
 	$conn = connect(); 
 	$query = "SELECT * FROM products";
 	$result = $conn->query($query);
@@ -22,7 +22,11 @@
 			<?php
 				while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 					echo('<div class="product">');
+					echo('<a href="/product.php?id=');
+					echo($row['id']);
+					echo('">');
 					echo("<img src='".$row['img_dir']."' alt='".$row['img_dir']."'>");
+					echo('</a>');
 					echo('<h3 class="product-title">'.$row['name'].'</h3>');
 					echo('<p class="product-description">'.$row['brief_description'].'</p>');
 					echo('<a href="index.php">Contact Us</a>');
