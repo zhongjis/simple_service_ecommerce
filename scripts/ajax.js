@@ -19,19 +19,17 @@ function getPlace(zip)
 
 function getTax()
 {
-    var zip = document.getElementById("zipCode").value;
-    alert(zip);
-    if (window.XMLHttpRequest) {
+	var zip = document.getElementById("zipCode").value;
+	if (window.XMLHttpRequest) {
 		var xhr = new XMLHttpRequest();
     } else {
 		var xhr = new ActiveXObject ("Microsoft.XMLHTTP");
     }
     xhr.onreadystatechange = function ()
     {
-        
-            var result = xhr.responseText;
+            var result = parseFloat(xhr.responseText);
             var rate = result;
-            document.getElementById ("taxrate").value = rate; 
+            document.getElementById ("taxrate").value = rate.toFixed(2); 
         
     }
 
