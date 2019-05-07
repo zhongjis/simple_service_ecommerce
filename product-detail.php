@@ -27,7 +27,7 @@
 				echo('<p class="product-description">'.$row['detail_description'].'</p>');
 			}
 		?>
-		<form action="get-method.php" name="QuoteForm" method="GET" enctype="text/plain" onSubmit="return (checkQuoteRequest())"> <br>
+		<form action="get-method.php?id=<?php $id ?>" name="QuoteForm" method="GET" enctype="text/plain" onSubmit="return (checkQuoteRequest())"> <br>
 			<h3>Get a Quote</h3>
 			<div id="basicInfo">
 				<h4>Basic Information</h4>
