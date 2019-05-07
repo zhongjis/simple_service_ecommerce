@@ -3,6 +3,7 @@
 	// if ( isset( $_GET['submit'] ) ) { 
 	// 	echo "hahahahah";
 		// retrieve the form data by using the element's name attributes value as key 
+		require_once "header.php";
 		require_once('dbconnect.php');
 		$conn = connect(); 
 		

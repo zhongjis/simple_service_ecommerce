@@ -1,4 +1,5 @@
 <?php 
+	require_once "header.php";
 
 	$order_id = $_GET['id'];
 	require_once('dbconnect.php');
